@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-bs-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="اكتشف فعاليات الجامعة الافتراضية: ثقافة، رياضة، موسيقى، فنون، تقنية وفعاليات عائلية.">
+  <title>دليل فعاليات الجامعة الافتراضية — الرئيسية</title>
+  <link rel="icon" type="image/svg+xml" href="assets/img/logo.svg">
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap" rel="stylesheet">
+  
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.rtl.min.css" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+  <link href="assets/css/styles.css" rel="stylesheet">
+  <!-- تطبيق الوضع الليلي المحفوظ قبل رسم الصفحة لتجنّب الوميض -->
+  <script>try{var t=JSON.parse(localStorage.getItem('vsu_theme'));if(t)document.documentElement.setAttribute('data-bs-theme',t);}catch(e){}</script>
+</head>
+<body data-page="home" class="d-flex flex-column min-vh-100">
+  <a class="skip-link" href="#main">تخطَّ إلى المحتوى</a>
+  <!-- شعار + شريط تنقل -->
+  <header class="site-header sticky-top">
+    <nav class="navbar navbar-expand-lg bg-body shadow-sm" aria-label="التنقل الرئيسي">
+      <div class="container">
+        <a class="navbar-brand d-flex align-items-center gap-2" href="index.html">
+          <img src="assets/img/logo.svg" width="42" height="42" alt="شعار دليل فعاليات الجامعة الافتراضية">
+          <span class="fw-bold lh-sm">دليل فعاليات<br><small class="text-body-secondary fw-normal">الجامعة الافتراضية</small></span>
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav" aria-controls="mainNav" aria-expanded="false" aria-label="تبديل قائمة التنقل">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="mainNav">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item"><a class="nav-link" href="index.html"><i class="bi bi-house"></i> الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="events.html"><i class="bi bi-calendar3"></i> كل الفعاليات</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html"><i class="bi bi-info-circle"></i> عن الدليل</a></li>
+            <li class="nav-item"><a class="nav-link" href="contact.html"><i class="bi bi-envelope"></i> اتصل بنا</a></li>
+          </ul>
+          <div class="d-flex align-items-center gap-2">
+            <button id="themeToggle" class="btn btn-outline-secondary" type="button" aria-label="تبديل الوضع الليلي"><i class="bi bi-moon-stars-fill"></i></button>
+            <a href="events.html" class="btn btn-primary">تصفّح الفعاليات</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main id="main">
+    <!-- Hero -->
+    <section class="hero pt-5 pb-5 mb-4" aria-labelledby="heroTitle">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-lg-5">
+            <h1 id="heroTitle" class="display-5 fw-bold">كل فعاليات الجامعة<br>في مكان واحد</h1>
+            <p class="lead">ابحث، صفِّ، واحجز مكانك في الأمسيات والبطولات والورش القادمة.</p>
+            <form class="hero-search input-group input-group-lg" action="events.html" method="get" role="search">
+              <input type="search" name="q" class="form-control" placeholder="ابحث عن فعالية..." aria-label="بحث عن فعالية">
+              <button class="btn btn-warning" type="submit"><i class="bi bi-search"></i> بحث</button>
+            </form>
+          </div>
+          <div class="col-lg-7">
+            <h2 class="h5 mb-2"><i class="bi bi-stars"></i> فعاليات بارزة هذا الأسبوع</h2>
+            <div id="heroSlider" class="vs-slider" aria-roledescription="شريط صور متحرك" aria-label="الفعاليات البارزة">
+              <div class="vs-track"></div>
+              <button type="button" class="vs-nav vs-prev" aria-label="الشريحة السابقة"><i class="bi bi-chevron-right"></i></button>
+              <button type="button" class="vs-nav vs-next" aria-label="الشريحة التالية"><i class="bi bi-chevron-left"></i></button>
+              <div class="vs-dots"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+      <!-- المشاركون في المشروع-->
+    <section class="section section-soft" id="team-ids" aria-labelledby="idsTitle">
+      <div class="container">
+        <div class="card team-ids shadow-sm">
+          <div class="card-body p-4">
+            <h2 id="idsTitle" class="h4 mb-1"><i class="bi bi-people-fill"></i> المشاركون في المشروع</h2>
+            <p class="text-body-secondary">مقرر برمجة الويب (BWP401) — إشراف: د. باسل الخطيب</p>
+            <div class="table-responsive">
+              <table class="table table-striped align-middle mb-0">
+                <thead><tr><th scope="col">#</th><th scope="col">الاسم</th><th scope="col">الرقم الجامعي (ID)</th></tr></thead>
+                <tbody>
+                  <!-- اسماء الشركاء اكملوها -->
+                  <tr><td>1</td><td>ميلاد عاصم ابو فخر</td><td>milad_408422</td></tr>
+                  <tr><td>2</td><td>يزن الموسى المكسور</td><td>yazan_344861</td></tr>
+                  <tr><td>3</td><td>اية نايف الأحمد</td><td>aya_371554</td></tr>
+                  <tr><td>4</td><td>يمان جهاد سنجاب</td><td>yaman_360932</td></tr>
+                  <tr><td>5</td><td>يوسف بسمان مرعي</td><td>yousef_360216</td></tr>
+                </tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--daily event card-->
+    <section class="section pt-2" aria-labelledby="catTitle">
+      <div class="container">
+        <div class="row g-4 align-items-stretch">
+          <div class="col-lg-7" id="todayCard">
+            <div class="card today-card h-100">
+              <div class="row g-0 h-100">
+                <div class="col-md-5"><img id="todayImg" src="assets/img/e1.svg" alt=""></div>
+                <div class="col-md-7">
+                  <div class="card-body">
+                    <span id="todayLabel" class="badge mb-2 fs-6"></span>
+                    <h2 id="todayTitle" class="h4"></h2>
+                    <p id="todayMeta" class="text-body-secondary"></p>
+                    <div class="countdown mb-2" aria-label="العدّ التنازلي لبدء الفعالية">
+                      <div class="cd-box"><b id="cdD">00</b><small>يوم</small></div>
+                      <div class="cd-box"><b id="cdH">00</b><small>ساعة</small></div>
+                      <div class="cd-box"><b id="cdM">00</b><small>دقيقة</small></div>
+                      <div class="cd-box"><b id="cdS">00</b><small>ثانية</small></div>
+                    </div>
+                    <p id="cdMsg" class="text-success fw-bold d-none"></p>
+                    <a id="todayLink" class="btn btn-primary" href="events.html">تفاصيل الفعالية</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-5">
+            <h2 id="catTitle" class="h4 section-title">تصنيفات سريعة</h2>
+            <p class="text-body-secondary">اختر تصنيفاً ليتذكّره الدليل في زيارتك القادمة.</p>
+            <div id="catList" aria-label="التصنيفات"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--  أحدث الفعاليات -->
+    <section class="section section-soft" aria-labelledby="latestTitle">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center flex-wrap gap-2 mb-3">
+          <h2 id="latestTitle" class="h3 section-title mb-0">أحدث الفعاليات</h2>
+          <a href="events.html" class="btn btn-outline-primary">عرض كل الفعاليات <i class="bi bi-arrow-left"></i></a>
+        </div>
+        <div id="latestGrid" class="row g-4"></div>
+      </div>
+    </section>
+
+    <!--  شاهدتها مؤخراً  -->
+    <section id="recentSection" class="section d-none" aria-labelledby="recentTitle">
+      <div class="container">
+        <div class="d-flex justify-content-between align-items-center mb-3">
+          <h2 id="recentTitle" class="h3 section-title mb-0">شاهدتها مؤخراً</h2>
+          <button id="clearRecent" type="button" class="btn btn-sm btn-outline-secondary">مسح السجل</button>
+        </div>
+        <div id="recentGrid" class="row g-4"></div>
+      </div>
+    </section>
+
+  
+  </main>
+
+  <!--  Footer:-->
+  <footer class="site-footer pt-5 pb-3 mt-auto">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-md-5">
+          <div class="d-flex align-items-center gap-2 mb-3"><img src="assets/img/logo.svg" width="44" height="44" alt="" style="border-radius:10px"><h5 class="mb-0">دليل فعاليات الجامعة الافتراضية</h5></div>
+          <p>منصة واحدة تجمع فعاليات الجامعة الثقافية والرياضية والفنية والتقنية والعائلية، لتصلك أخبارها أولاً بأول.</p>
+          <div class="social" aria-label="حسابات التواصل الاجتماعي">
+            <a href="https://facebook.com" aria-label="فيسبوك"><i class="bi bi-facebook"></i></a>
+            <a href="https://x.com" aria-label="إكس"><i class="bi bi-twitter-x"></i></a>
+            <a href="https://instagram.com" aria-label="إنستغرام"><i class="bi bi-instagram"></i></a>
+            <a href="https://youtube.com" aria-label="يوتيوب"><i class="bi bi-youtube"></i></a>
+          </div>
+        </div>
+        <div class="col-6 col-md-3">
+          <h5>روابط سريعة</h5>
+          <ul class="list-unstyled">
+            <li><a href="index.html">الرئيسية</a></li>
+            <li><a href="events.html">كل الفعاليات</a></li>
+            <li><a href="about.html">عن الدليل</a></li>
+            <li><a href="contact.html">اتصل بنا</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-md-4">
+          <h5>معلومات التواصل</h5>
+          <ul class="list-unstyled">
+            <li><i class="bi bi-envelope"></i> events@vsu-guide.example</li>
+            <li><i class="bi bi-telephone"></i> <span dir="ltr">+963 11 000 0000</span></li>
+            <li><i class="bi bi-geo-alt"></i> SVU</li>
+          </ul>
+        </div>
+      </div>
+      <hr class="border-secondary mt-4">
+      <p class="text-center small mb-0">© <span id="year">2026</span> مشروع الويب _شكرا لتعوانكم</p>
+    </div>
+  </footer>
+  <button id="toTop" type="button" aria-label="العودة إلى أعلى الصفحة"><i class="bi bi-arrow-up"></i></button>
+
+  <!-- jQuery -->
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/data.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
